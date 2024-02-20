@@ -22,6 +22,21 @@ app.get("/properties", async (req, res) => {
     });
 });
 
+app.post("/properties", async (req, res) => {
+  Properties.create({
+    Address: req.body.Address,
+    Image: req.body.Image,
+    Price: req.body.Price,
+  })
+    .then((property) => {
+      res.status(201).json(property);
+    })
+    .catch((err) => {
+      console.error(err);
+      res.status(500).send("Error: " + err);
+    });
+});
+
 app.listen(3000, () => {
   console.log("Your app is listening on port 3000.");
 });
