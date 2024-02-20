@@ -9,7 +9,8 @@ app.use(cors());
 app.use(express.urlencoded({ extended: true }));
 const Properties = Models.Property;
 
-mongoose.connect("mongodb://localhost:27017/properties");
+// mongoose.connect("mongodb://localhost:27017/properties");
+mongoose.connect(process.env.CONNECTION_URI);
 
 app.get("/properties", async (req, res) => {
   await Properties.find()
