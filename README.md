@@ -54,3 +54,8 @@ This REST API is built with Node.js and Express.js, and the business logic is mo
     </tr>
 	</tbody>
 </table>
+
+## Testing with Postman
+
+<img src="./assets/GetProperties.jpeg" alt="GET testing" width="420"/>
+<img src="./assets/PostProperty.png" alt="POST testing" width="420"/>
