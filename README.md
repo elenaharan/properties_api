@@ -4,7 +4,7 @@ This REST API allows users to view property listings that are currently for sale
 
 ## Technologies
 
-This REST API is built with Node.js and Express.js, and the business logic is modelled with Mongoose. The API is hosted on Heroku, and the database is built using MongoDB and is hosted on MongoDB Atlas. The API endpoints have been tested with Postman.
+This REST API is built with Node.js and Express.js, and the business logic is modelled with Mongoose. The API is hosted on Heroku (https://properties-api-aa2cb0dedf98.herokuapp.com/properties), and the database is built using MongoDB and is hosted on MongoDB Atlas. The API endpoints have been tested with Postman.
 
 - Node.js
 - Express.js
